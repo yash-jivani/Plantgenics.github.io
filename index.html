@@ -17,15 +17,15 @@
     <!-- === js === -->
     <script src="main.js" defer></script>
 
-    <title>Plants Website</title>
+    <title>Plantex</title>
 </head>
 <body>
 
-    <div class="container">
+    <!-- ================= HEADER ================= -->
 
-        <!-- ================= HEADER ================= -->
-        <header class="header" id="header">
-            <!-- nav-bar -->
+    
+    <!--  nav bar  -->
+        <div class="nav-container">
             <div class="nav">
                 <!-- logo -->
                 <div class="logo">
@@ -35,13 +35,18 @@
                 <div class="nav-links">
                     <ul>
                         <li> <a href="#">Home</a> </li>
-                        <li> <a href="#">Products</a> </li>
                         <li> <a href="#">About</a> </li>
+                        <li> <a href="#">Products</a> </li>
                         <li> <a href="#">FAQs</a> </li>
                         <li> <a href="#">Contect Us</a>  </li>
                     </ul>
                 </div>
             </div>
+        </div>
+        
+    
+    <div class="container">
+        <header class="header" id="header">
             <!-- showcase -->
             <div class="showcase">
                 <div class="header-info">
@@ -54,23 +59,180 @@
                 </div>
             </div>
         </header>
-
-        
-        
     </div>
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="container">
         <main class="main">
-            
+
+            <!-- Why us -->
+            <section class="why-us">
+                <div class="why-img">
+                    <img src="./img-etc/about.png" alt="">
+                </div>
+                <div class="why-info">
+                    <h1 class="why-heading">
+                        Who we really are & why choose us
+                    </h1>
+                    <p class="why-para">We have over 4000+ unbiased reviews and out customers trust our plant process and delivery service every time.</p>
+                    <ul class="why-us-ul">
+                        <li class="why-us-li">
+                            <p class="why-us-p"><i class="ri-checkbox-fill"></i>We always deliver on time.</p>
+                        </li>
+                        <li class="why-us-li">
+                            <p class="why-us-p"><i class="ri-checkbox-fill"></i>We give you guides to protect and care for your plants.</p>
+                        </li>
+                        <li class="why-us-li">
+                            <p class="why-us-p"><i class="ri-checkbox-fill"></i>We always came over for a check-up after sale.</p>
+                        </li>
+                        <li class="why-us-li">
+                            <p class="why-us-p"><i class="ri-checkbox-fill"></i>100% money back guaranteed.</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="why-us-link">Shop Now<i class="ri-arrow-right-down-line"></i></a>
+                </div>
+            </section>
+
+            <!-- About -->
+
+            <section class="about">
+                <div class="about-head-div">
+                    <h1 class="about-heading">Step to start your <br> plants off right</h1>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <h2 class="card-number">01</h2>
+                        <h4 class="card-title">Choose plant</h4>
+                        <p class="card-info">We have several varieties plants you can choose from.</p>
+                    </div>
+                    <div class="card">
+                        <h2 class="card-number">02</h2>
+                        <h4 class="card-title">Place an order</h4>
+                        <p class="card-info">Once your order is se, we move to the next step which is the shipping.</p>
+                    </div>
+                    <div class="card">
+                        <h2 class="card-number">03</h2>
+                        <h4 class="card-title">Get plant delivered</h4>
+                        <p class="card-info">Our delivery process is easy, you receive the plant direct to your door.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products -->
+
+            <section class="products">
+                <div class="product-heading">
+                    <h1>Check out our  <br> products</h1>
+                    <p>Here are some selected plants from our showroom, all <br>are in excellent shape and has a long life span. Buy and <br>Enjoy best quality.</p>
+                </div>
+                <div class="product-wrapper">
+                    <div class="item">
+                        <div class="item-img">
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                            <img src="./img-etc/product1.png" alt="">
+                        </div>
+                        <div class="product-detail">
+                            <h2 class="item-name">Cacti Plant</h2>
+                            <h2 class="item-price">
+                                <span>$29.99
+                                </span>
+                                <i class="ri-shopping-bag-line"></i>    
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-img">
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                            <img src="./img-etc/product3.png" alt="">
+                        </div>
+                        <div class="product-detail">
+                            <h2 class="item-name">Aelo Vera Plant</h2>
+                            <h2 class="item-price">
+                                <span>$39.99
+                                </span>
+                                <i class="ri-shopping-bag-line"></i>    
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-img">
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                            <img src="./img-etc/product5.png" alt="">
+                        </div>
+                        <div class="product-detail">
+                            <h2 class="item-name">Succulent Plant</h2>
+                            <h2 class="item-price">
+                                <span>$9.99
+                                </span>
+                                <i class="ri-shopping-bag-line"></i>    
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-img">
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                            <img src="./img-etc/product2.png" alt="">
+                        </div>
+                        <div class="product-detail">
+                            <h2 class="item-name">Cactus Plant</h2>
+                            <h2 class="item-price">
+                                <span>$49.99
+                                </span>
+                                <i class="ri-shopping-bag-line"></i>    
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-img">
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                            <img src="./img-etc/product6.png" alt="">
+                        </div>
+                        <div class="product-detail">
+                            <h2 class="item-name">Green Plant</h2>
+                            <h2 class="item-price">
+                                <span>$29.99
+                                </span>
+                                <i class="ri-shopping-bag-line"></i>    
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-img">
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                            <img src="./img-etc/product4.png" alt="">
+                        </div>
+                        <div class="product-detail">
+                            <h2 class="item-name">Ipsum Plant</h2>
+                            <h2 class="item-price">
+                                <span>$19.99
+                                </span>
+                                <i class="ri-shopping-bag-line"></i>    
+                            </h2>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </section>
+
         </main>
-        
-        <!-- ================= FOOTER ================= -->
+    </div>
+
+    <!-- ================= FOOTER ================= -->
         <footer class="footer section">
             
         </footer>
         
         <!-- ================= scroll up ================= -->
-
-
-    <!-- ================= scroll reveal ================= -->
+        
+        
+        <!-- ================= scroll reveal ================= -->
     <script src=""></script>
 
 
