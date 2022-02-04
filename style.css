@@ -37,6 +37,22 @@ a{
     transition: all 0.2s ease-in-out;
 }
 
+input{
+    border: none;
+    border-bottom: #3E6553 solid 1px    ;
+    outline: none;
+}
+
+label{
+    display: block;
+}
+
+textarea{
+    outline: none;
+    display: block;
+    border: none;
+}
+
 /* --> Utitlity classes <-- */
 
 .btn{
@@ -46,6 +62,10 @@ a{
     color: white;
     font-weight: 500;
     display: inline-block;
+}
+
+.btn:hover{
+    background-color: #447a61;
 }
 
 
@@ -71,6 +91,7 @@ a{
     justify-content: center;
     align-items: center;
     z-index: 999;
+    height: 6rem;
     box-shadow: 0 0px 6px rgb(0, 0, 0,0.36);
 }
 
@@ -307,7 +328,7 @@ a{
     margin: 2rem auto;
 }
 
-.about-heading{
+.about-head-div .about-heading{
     text-align: center;
     font-weight: 600;
     font-size: 3rem;
@@ -418,7 +439,7 @@ a{
 
 .product-detail .item-price span{
     font-size: 1.7rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #447a61;
 
 }
@@ -435,8 +456,6 @@ a{
     font-weight: 600;
     color: #2c2c2c;
 }
-
-
 
 .ri-checkbox-blank-circle-fill:before {
     content: "\eb7c";
@@ -474,31 +493,909 @@ a{
     transform: translateY(-.7rem);
 }
 
+/* ---> Qna section <--- */
+
+.qna-section{
+    background-color: #447a612f;
+    padding: 7rem 0;
+}
+
+/* .container{
+    border: #2c2c2c 2px solid;
+} */
+
+.ul-container{
+    /* border: 2px solid #365949; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.question-li{
+    display: inline-flex;
+    /* justify-content: center; */
+    width: 45%;
+    padding: 2rem;
+    min-width:37rem;
+    transition: all .3s;
+    cursor: pointer;
+    align-items:center ;
+    margin: 1.3rem 0;
+    /* border: red solid 2px; */
+    border-radius: 2.5px;
+    background-color: white;
+    height: 4rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.container h1{
+    font-size: 3rem;
+    color: #2c2c2c;
+    margin: 4rem 0;
+}
+
+.question-li .question{
+    margin-left: .7rem;
+    font-size: 1.5rem;
+}
+
+.ri-add-line:before {
+    content: "\ea13";
+    font-size: 1.6rem;
+}
+
+.question-li:hover{
+    transform: translateY(-0.2rem);
+}
+
+/* Contect us */
+
+.contact-us{
+    /* border: 3px solid black; */
+    display: flex;
+    margin: 9rem 0;
+    justify-content: space-between;
+    
+}
+
+.contact-info{
+    /* border: green 4px solid; */
+    width: 48%;
+    margin-right: 2rem;
+}
+
+.form-div{
+    /* border: red 2px solid; */
+    width: 48%;
+}
+
+/* contect us */
+
+.contact-info h1{
+    margin: 3.5rem 0;
+}
+
+.contact-info span{
+    display: inline-flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #365949;
+}
+
+.contact-info p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom:0.5rem ;
+}
+
+.contact-info .call{
+    margin: 2rem 0;
+}
+
+.contact-info .mail{
+    margin-bottom: 1rem;
+}
+
+.ri-mail-line:before {
+    content: "\eef6";
+    margin-right: 0.4rem;
+    font-size: 1.3rem;
+}
+
+.ri-phone-fill:before {
+    margin-right: 0.4rem;
+    font-size: 1.3rem;
+}
+
+.form-div input{
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+}
+
+.form-control label{
+    font-size: 1.5rem;
+}
+
+.form-control .form-btn{
+    margin-top:2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.form-control a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control textarea{
+    margin-top: 1rem;
+    border-bottom:1px solid black ;
+    width: 100%;
+    resize: none;
+    font-size: 1.6rem;
+}
+
+.ri-arrow-right-up-line:before {
+    content: "\ea70";
+    margin-left: .2rem;
+    font-size: 1.5rem;
+}
+
+/* footer */
+
+footer{
+    background-color: #447a611e;
+    padding: 5rem 0 2rem 0;
+}
+
+.footer-section{
+    /* border: 2px solid black; */
+} 
+
+.footer-wrapper{
+    /* border: #2c2c2c solid 5px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-one{
+    /* border: blue solid 2px; */
+    
+}
+
+.f-one h1{ 
+    font-size: 2rem;
+    color: #2c2c2c;
+}
+
+.f-one input{ 
+    font-size: 1.12rem;
+    /* padding: 0.3rem; */
+    background-color: transparent;
+    border-bottom: 0;
+
+}
+
+.f-one input::placeholder{
+    color: white;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+
+.f-one .footer-mail{
+    text-align: center;
+    background-color: #63837561;
+    border-radius:3.5px ;
+    padding: 1rem;
+}
+
+.footer-btn{
+    border-radius: 4px;
+    margin-top: .5rem;
+}
+
+.f-two{
+    /* border: red solid 2px; */
+    padding: 1rem;
+
+}
+
+.f-two h2{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    color: #2c2c2c;
+}
+
+.f-two p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #2c2c2c;
+}
+
+.contact-footer{
+    /* border: 2px solid black; */
+    padding: 1rem;
+
+}
+
+.contact-footer h2{
+    font-size: 2.3rem;
+    color: #2c2c2c;
+    margin-bottom: 2rem;
+}
+
+.contact-footer span{
+    font-size: 1.5rem;
+    color: #2c2c2c;
+    margin-bottom: 2rem;
+}
+
+.f-icons{
+    margin: 1rem;
+}
+
+.f-icons .ri-facebook-fill:before{
+    color: black;
+}
+.f-icons .ri-instagram-line:before{
+    color: #000;
+}
+.f-icons .ri-twitter-fill:before{
+    color: #000;
+}
+
+.f-icons a:hover
+.ri-twitter-fill:before{
+    color: #3E6553;
+}
+
+.f-icons a:hover
+.ri-facebook-fill:before{
+    color: #3E6553;
+}
+
+.f-icons a:hover
+.ri-instagram-line:before{
+    color: #3E6553;
+}
+
+.ri-facebook-fill:before {
+    content: "\ecbc";
+    font-size:1.5rem ;
+    
+}
+
+.ri-instagram-line:before {
+    content: "\ee66";
+    font-size: 1.5rem;
+    margin: 0 .5rem;
+}
+
+.ri-twitter-fill:before {
+    content: "\f23a";
+    font-size: 1.5rem;
+}
+
+.f-payment{
+    /* border: yellow 2px solid; */
+    padding: 1rem;
+
+}
+
+.f-payment h2{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    color: #2c2c2c;
+}
 
 
 
+.f-img{
+    width: 5rem;
+    margin: .3rem;
+    transition: all 0.2s ;
+}
+
+.f-payment a:hover img{
+    transform: translateY(-.2rem);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.footer-div{
+    width: 25%;
+
+}
+
+footer .cpy-text{
+    color: rgb(63, 63, 63);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 500;
+
+
+}
+
+footer .cpy-text a{
+    color: #2c2c2c;
+    font-size: 1.2rem;
+}
+
+footer .cpy-text a:hover{
+    color: #365949;
+    text-decoration: underline;
+
+}
 
 
 
+/* ! ########################### MEDIA Query ################################### */
+
+@media (max-width:320px){
 
 
+    /* showcase - links */
+    .nav-links{
+        display: none;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .showcase{
+        justify-content: center;
+    }
+
+    .showcase .showcase-title{
+        font-size: 2.3rem;
+        text-align: center;
+    }
+    .showcase .header-img{
+        min-width: 25rem;
+    }
+
+    .showcase .header-info{
+        min-width: 25rem;
+        text-align: center;
+    }
+
+    .header-info .showcase-btn{
+        margin-top: 0.7rem;
+    }
+
+    .container .showcase h1{
+        margin: 2rem 0;
+    }
+
+    .header-info .showcase-data {
+        font-size: 1.2rem;
+        text-align: center;
+        /* margin: 0; */
+    }
+    /* why us */
+    .why-us .why-img{
+        min-width: 25rem;
+    }
+
+    .why-info .why-heading{
+        font-size:2.5rem;
+    }
+
+    .why-us-li p{
+        font-size: 1rem;
+    }
+
+    /* about */
+
+    .about{
+        margin: 0;
+    }
+
+    .about-head-div{
+        width: 100%;
+    }
+
+    .about .card{
+        margin-bottom: 2rem;
+    }
+
+    /* product */
+
+    .products{
+        margin: 2rem 0;
+    }
+
+    .product-heading p {
+        margin-top: -2rem;
+        font-size: 1rem;
+    }
+
+    /* qna section */
+
+    .qna-section{
+        padding: 5rem 0;
+    }
+
+    .question-li{
+        width: 100%;
+        min-width: 26rem;
+    }
+
+    .question-li .question{
+        font-size: 1rem;
+    }
+
+    .ri-add-line:before {
+        font-size: 1.2rem;
+    }
+
+    /* contact us */
+
+    .contact-us{
+        display: block;
+    }
+
+    .contact-info{
+        width: 100%;
+    }
+    .form-div{
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .form-control .form-btn{
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* footer */
+
+    footer .footer-wrapper{
+        display: block;
+    }
+    footer .footer-div{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .f-payment h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .f-one h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .f-two h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .contact-footer h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media(min-width:321px) and (max-width:426px){
+    /* nav bar */
+
+    .nav-links{
+        display: none;
+    }
+
+    .why-us{
+        justify-content: center;
+    }
+
+    .showcase{
+        justify-content: center;
+    }
+
+    .header-info{
+        text-align: center;
+    }
+    .header-info .showcase-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .header-info .showcase-data{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .header-img{
+        text-align: center;
+        min-width: 25rem;
+    }
+    .container{
+        width: 88%;
+    }
+
+    /* why us */
+
+    .why-info .why-heading{
+        font-size: 3rem;
+    }
+
+    .why-us-li p{
+        font-size: 1rem;
+    }
+
+    .about-head-div{
+        width: 100%;
+    }
+
+    .card-wrapper .card{
+        margin: 2rem 0;
+    }
+
+    .products .container h1{
+        margin: 1rem 0;
+    }
+
+    /* qna */
+
+    .qna-section .container h1{
+        font-size: 2rem;
+        text-align: center;
+        margin: 3rem 0;
+    }
+
+    .question-li{
+        font-size: 1rem;
+        width: 100%;
+        min-width: 26rem;
+    }
+
+    .question-li .question {
+        font-size: 1.1rem;
+    }
+
+    /* contact us */
+
+    .contact-us{
+        display: block;
+    }
+
+    .contact-info{
+        width: 100%;
+    }
+    .form-div{
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .form-control .form-btn{
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* footer */
+
+    footer .footer-wrapper{
+        display: block;
+    }
+    footer .footer-div{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .f-payment h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .f-one h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .f-two h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .contact-footer h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+
+}
+
+@media(min-width:425px) and (max-width:680px){
 
 
+    .nav-links{
+        display: none;
+    }
 
+    .why-us{
+        justify-content: center;
+    }
 
+    .showcase{
+        justify-content: center;
+    }
 
+    .header-info{
+        text-align: center;
+    }
+    .header-info .showcase-title {
+        font-size: 3rem;
+        text-align: center;
+    }
 
+    .header-info .showcase-data{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .header-img{
+        text-align: center;
+        min-width: 25rem;
+    }
+    .container{
+        width: 88%;
+    }
 
+    /* why us */
 
-/* .footer{
-    border: 2px solid black;
-}  */
+    .why-info .why-heading{
+        font-size: 3rem;
+    }
 
+    .why-us-li p{
+        font-size: 1rem;
+    }
 
+    .about-head-div{
+        width: 100%;
+    }
 
+    .card-wrapper .card{
+        margin: 2rem 0;
+    }
 
+    .products .container h1{
+        margin: 1rem 0;
+    }
 
+    .qna-section .container h1{
+        font-size: 2rem;
+        text-align: center;
+        margin: 3rem 0;
+    }
 
+    .question-li{
+        font-size: 1rem;
+        width: 100%;
+        min-width: 26rem;
+    }
+
+    .question-li .question {
+        font-size: 1.1rem;
+    }
+
+    .item {
+        min-width: 20rem;
+    }   
+
+    /* contact us */
+
+    .contact-us{
+        display: block;
+    }
+
+    .contact-info{
+        width: 100%;
+    }
+    .form-div{
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .form-control .form-btn{
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+    
+    footer .footer-wrapper{
+        display: block;
+    }
+    footer .footer-div{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .f-payment h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .f-one h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .f-two h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .contact-footer h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+
+}
+
+@media(min-width:681px) and (max-width:925px){
+
+    .container{
+        width: 85%;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .card-wrapper .card{
+        margin: 2rem;
+    }
+    .qna-section h1{
+        font-size: 3rem;
+        color: #2c2c2c;
+        margin: 4rem 0;
+        /* text-align: center; */
+    }
+
+    .why-us{
+        justify-content: space-around;
+    }
+
+    .showcase{
+        justify-content: center;
+    }
+
+    .header-info .showcase-title {
+        font-size: 3rem;
+    }
+
+    .header-info .showcase-data{
+        font-size: 1.5rem;
+    }
+    .header-img{
+        /* text-align: left; */
+        min-width: 20rem;
+    }
+    .container{
+        width: 88%;
+    }
+
+    /* why us */
+
+    .why-info .why-heading{
+        font-size: 3rem;
+    }
+
+    .why-us .why-img{
+        min-width: 20rem;
+    }
+
+    .why-us-li p{
+        font-size: 1rem;
+    }
+
+    .about-head-div{
+        width: 100%;
+    }
+
+    .why-us-link {
+        margin-top:1.6rem ;
+    }
+    .card-wrapper .card{
+        margin: 2rem 0;
+    }
+
+    .products .container h1{
+        margin: 1rem 0;
+    }
+
+    .item {
+        min-width: 20rem;
+    } 
+
+    /* qna */
+
+    .qna-section .container h1{
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .question-li{
+        font-size: 1rem;
+        width: 48%;
+        min-width: 25rem;
+    }
+
+    .question-li .question {
+        font-size: 1.1rem;
+    }
+
+    /* contact us */
+
+    .contact-us{
+        display: flex;
+    }
+
+    .contact-info{
+        width: 100%;
+    }
+    .form-div{
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .form-control .form-btn{
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* footer */
+
+    footer .footer-wrapper{
+        display: flex;
+    }
+    footer .footer-div{
+        width: 48%;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .f-payment h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .f-one h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .f-two h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .contact-footer h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1.2rem;
+    }
+    .ul-container{
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:926px) and (max-width:1140px){
+    .container{
+        width: 85%;
+    }
+    .card-wrapper .card{
+        margin: 2rem;
+    }
+    .item {
+        min-width: 20rem;
+    } 
+}
+
+@media(min-width:1140px) and (max-width:1440px){
+    .item {
+        min-width: 20rem;
+    } 
+}
+
+@media(min-width:925px) and (max-width:1116px){
+
+    .container{
+        width: 88%;
+    }
+} 
 
 
 
