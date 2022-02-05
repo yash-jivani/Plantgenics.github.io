@@ -9,7 +9,7 @@ remix icon,
 google icons,
 unsplash*
 
-- *[Tap Here to Visit]().*
+- *[Tap Here to Visit](https://yash-jivani.github.io/Plantgenics.github.io/).*
 
 
 ## Contributing
